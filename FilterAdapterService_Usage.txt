@@ -1,0 +1,47 @@
+Utility to list the Adapter Services of a given Adapter Service Template Type
+
+
+The attached sample package helps to retrieve the list of Adapter Services for a given Adapter Service Template Type. This utility will work for all types of databases.
+
+
+Please follow the FilterAdapterService_Usage.txt for Usage details
+
+
+Pre-requisites:
+---------------
+
+The sample package attached here fetches the list of Adapter services for the particular Adapter Service Template Type.
+
+Hence make sure you have a JDBC Adapter Connection and services of different types of templates being created.
+
+
+Package Installation Steps:
+----------------------------
+
+1. If you have not already done so, follow the pre-requisites section.
+
+2. Place the FilterAdapterService.zip into the IntegrationServer/replicate/inbound
+   
+3. In Integration Server Administrator, in the "Packages"
+   area of the navigation panel, select "Management".
+
+4. Click "Install Inbound Releases".
+
+5. From the "Release file name" list, select
+   "FilterAdapterService".
+
+6. Click "Install Release".
+
+
+
+
+Test Filter Adapter Service Template
+*************************************
+
+After Installing the IS Package, run the service AdapterService:FilterAdapterService.
+
+The service takes three input parameters "PackageName","FolderName" and "ServiceType"
+
+Provide the Package name, Folder Name where you have Adapter Services hosted and pick the "ServiceType" as for eg., "Select" from the drop-down.
+
+This service will return all the Adapter Services of type "select-sql" which is hosted in the package and folder.
